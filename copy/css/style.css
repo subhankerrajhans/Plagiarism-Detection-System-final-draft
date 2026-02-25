@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #dfe9f3, #a6c0fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    width: 900px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 15px;
+    color: #334155;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left { width: 40%; }
+
+.left h1 {
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.left p {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #475569;
+}
+
+.right { width: 45%; }
+
+.upload-box {
+    border: 2px dashed #4da6ff;
+    border-radius: 14px;
+    padding: 35px;
+    background: #f8fafc;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-box.dragover {
+    background: #eff6ff;
+    border-color: #007bff;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.upload-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.scan-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #4da6ff, #007bff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    margin-top: 18px;
+    display: none;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #007bff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#progressText {
+    font-size: 13px;
+    margin-top: 6px;
+    color: #475569;
+}
+
+.result-box {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #16a34a;
+}
+
+.left h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    color: #000;
+}
+
+.left p {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #475569;
+}
+
+/* ✅ Upload box text visibility fix */
+
+.upload-box p {
+    color: #0f172a;   /* dark slate */
+    font-weight: 500;
+    opacity: 1;
+}
+
+.upload-box span {
+    color: #334155;   /* slightly softer */
+    font-weight: 500;
+    opacity: 1;
+}
+
+.upload-icon {
+    font-size: 28px;
+    opacity: 1;
+}
